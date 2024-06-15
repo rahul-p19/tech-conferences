@@ -43,7 +43,7 @@ export default function Conferences() {
         return (
             <div id='modal' className="fixed z-10 lg:left-[30%] md:left-[15%] sm:left-[15%] left-[10%] top-6 bottom-6 lg:w-1/3 md:w-2/3 sm:w-2/3 w-4/5 overflow-y-auto bg-slate-300 rounded-sm shadow-custom pb-3">
                 <div key={item.id} className="flex flex-col items-center gap-y-1 relative">
-                    <button onClick={()=>{setShowModal([0,false]);toggleBlur();}} className="right-3 top-3 absolute"><img className="w-6 h-6" src="src\assets\iconmonstr-x-mark-circle-lined-32.png" alt="Close" /></button>
+                    <button onClick={()=>{setShowModal([0,false]);toggleBlur();}} className="right-3 top-3 absolute"><img className="w-6 h-6" src="../../src/assets/iconmonstr-x-mark-circle-lined-32.png" alt="Close" /></button>
                     <img src={item.banner_image} alt={item.title} className="w-full" />
                     <h1 className="text-center text-2xl mb-2 font-semibold dark:text-[#38a9bc]">
                         {item.title}
