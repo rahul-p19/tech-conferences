@@ -40,10 +40,11 @@ export default function Conferences() {
         );
     }
     function Modal({item}) {
+        console.log(item.organiser_icon);
         return (
             <div id='modal' className="fixed z-10 lg:left-[30%] md:left-[15%] sm:left-[15%] left-[10%] top-6 bottom-6 lg:w-1/3 md:w-2/3 sm:w-2/3 w-4/5 overflow-y-auto bg-slate-300 rounded-sm shadow-custom pb-3">
                 <div key={item.id} className="flex flex-col items-center gap-y-1 relative">
-                    <button onClick={()=>{setShowModal([0,false]);toggleBlur();}} className="right-3 top-3 absolute"><svg width="24px" height="24px" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg></button>
+                    <button onClick={()=>{setShowModal([0,false]);toggleBlur();}} className="right-3 top-3 absolute"><svg width="24px" height="24px" clipRule="evenodd" fillRule="evenodd" strokeLinejoin="round" strokeMiterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg></button>
                     <img src={item.banner_image} alt={item.title} className="w-full" />
                     <h1 className="text-center text-2xl mb-2 font-semibold dark:text-[#38a9bc]">
                         {item.title}
