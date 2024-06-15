@@ -14,6 +14,7 @@ export default function Conferences() {
 	const [info, setInfo] = useState([]);
     const [showModal,setShowModal] = useState([0,false]);
 	getData(setInfo);
+    console.log(info);
     function Card(item) {
         return (
             <>
@@ -65,7 +66,7 @@ export default function Conferences() {
 	return (
 		<>
 			<main className="p-12">
-                {showModal[1]&&<Modal item={info[showModal[0]]}/>}
+                {showModal[1]&&<Modal item={info[showModal[0]-1]}/>}
 				<div className="grid grid-cols-3 gap-x-8" id="content">
 					{info.map((item) => {
 						return <Card {...item} key={item.id}/>;

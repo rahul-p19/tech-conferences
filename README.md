@@ -1,8 +1,7 @@
-# React + Vite
+# Global Tech Conferences
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A website that displays information about various tech conferences from the world.
 
-Currently, two official plugins are available:
+> This website was given as a task for GDSC recruitment last year, decided to work on it for practice.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tech Stack used: TailwindCSS + ReactJS
