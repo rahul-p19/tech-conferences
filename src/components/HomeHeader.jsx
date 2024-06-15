@@ -13,11 +13,11 @@ export default function HomeHeader(){
   return(
     <>
     <header className="flex flex-col items-center">
-    <nav className="flex w-full items-center justify-between p-6">
-    <h1 className="text-6xl font-bold mx-auto dark:text-[#43b3c7]">Global Tech Conferences</h1>
-    <button className="m-5" onClick={handleDarkMode}>{darkMode?sunIcon:moonIcon}</button>
+    <nav className="flex w-full items-center justify-center pt-6 text-center relative">
+    <h1 className="text-6xl font-bold dark:text-[#43b3c7]">Global Tech Conferences</h1>
+    <button className="m-5 lg:absolute lg:right-7" onClick={handleDarkMode}>{darkMode?sunIcon:moonIcon}</button>
     </nav>
-    <h2 className="text-2xl mr-14 mt-4 dark:text-[#8ad3e0]">Information about various tech conferences around the world, at your fingertips.</h2>
+    <h2 className="text-2xl mt-4 dark:text-[#8ad3e0] px-3 text-center">Information about various tech conferences around the world, at your fingertips.</h2>
     </header>
     </>
   )
